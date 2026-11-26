@@ -1,0 +1,244 @@
+{
+  "experiment": "2_retrieval_methods",
+  "timestamp": "2026-11-18T15:41:12.380527",
+  "faiss_vector": {
+    "per_query": [
+      {
+        "question": "What deep learning model architectures are proposed in the uploaded papers?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 19.707,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What datasets were used to evaluate the models?",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.2,
+        "retrieval_latency_s": 0.02,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What are the main limitations mentioned by the authors?",
+        "precision_at_5": 0.4,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.022,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What evaluation metrics are reported in the experiments?",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.2,
+        "retrieval_latency_s": 0.019,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What future research directions do the authors suggest?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.022,
+        "retrieved_count": 5
+      },
+      {
+        "question": "How do the proposed methods compare to baseline approaches?",
+        "precision_at_5": 0.8,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.021,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What is the research problem being addressed in these papers?",
+        "precision_at_5": 0.4,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "retrieval_latency_s": 0.021,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What training procedures or optimization strategies are described?",
+        "precision_at_5": 0.4,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.022,
+        "retrieved_count": 5
+      }
+    ],
+    "aggregate": {
+      "precision_at_5": 0.55,
+      "recall_at_5": 1.0,
+      "mrr": 0.7167,
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "citation_accuracy": 0.0,
+      "hallucination_rate": 0.0,
+      "retrieval_latency_s": 2.4817,
+      "generation_latency_s": 0.0,
+      "total_latency_s": 0.0
+    }
+  },
+  "bm25_keyword": {
+    "per_query": [
+      {
+        "question": "What deep learning model architectures are proposed in the uploaded papers?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.014,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What datasets were used to evaluate the models?",
+        "precision_at_5": 0.8,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What are the main limitations mentioned by the authors?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What evaluation metrics are reported in the experiments?",
+        "precision_at_5": 0.6,
+        "recall_at_5": 1.0,
+        "mrr": 0.3333,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What future research directions do the authors suggest?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      },
+      {
+        "question": "How do the proposed methods compare to baseline approaches?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What is the research problem being addressed in these papers?",
+        "precision_at_5": 0.6,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What training procedures or optimization strategies are described?",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.2,
+        "retrieval_latency_s": 0.003,
+        "retrieved_count": 5
+      }
+    ],
+    "aggregate": {
+      "precision_at_5": 0.775,
+      "recall_at_5": 1.0,
+      "mrr": 0.8167,
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "citation_accuracy": 0.0,
+      "hallucination_rate": 0.0,
+      "retrieval_latency_s": 0.0044,
+      "generation_latency_s": 0.0,
+      "total_latency_s": 0.0
+    }
+  },
+  "hybrid": {
+    "per_query": [
+      {
+        "question": "What deep learning model architectures are proposed in the uploaded papers?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 2.757,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What datasets were used to evaluate the models?",
+        "precision_at_5": 0.4,
+        "recall_at_5": 1.0,
+        "mrr": 0.5,
+        "retrieval_latency_s": 0.636,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What are the main limitations mentioned by the authors?",
+        "precision_at_5": 0.6,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.595,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What evaluation metrics are reported in the experiments?",
+        "precision_at_5": 0.4,
+        "recall_at_5": 1.0,
+        "mrr": 0.25,
+        "retrieval_latency_s": 0.621,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What future research directions do the authors suggest?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.651,
+        "retrieved_count": 5
+      },
+      {
+        "question": "How do the proposed methods compare to baseline approaches?",
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.698,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What is the research problem being addressed in these papers?",
+        "precision_at_5": 0.6,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.687,
+        "retrieved_count": 5
+      },
+      {
+        "question": "What training procedures or optimization strategies are described?",
+        "precision_at_5": 0.6,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "retrieval_latency_s": 0.712,
+        "retrieved_count": 5
+      }
+    ],
+    "aggregate": {
+      "precision_at_5": 0.7,
+      "recall_at_5": 1.0,
+      "mrr": 0.8438,
+      "faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "citation_accuracy": 0.0,
+      "hallucination_rate": 0.0,
+      "retrieval_latency_s": 0.9196,
+      "generation_latency_s": 0.0,
+      "total_latency_s": 0.0
+    }
+  }
+}

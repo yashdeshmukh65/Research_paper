@@ -1,0 +1,23 @@
+{
+  "experiment": "L_limitation_extraction",
+  "timestamp": "2026-11-18T15:42:03.228373",
+  "per_paper": [
+    {
+      "paper": "tmpe3drefrx",
+      "predicted_count": 0,
+      "ground_truth_count": 0,
+      "note": "No ground truth available"
+    },
+    {
+      "paper": "tmp31uh0exi",
+      "predicted_count": 0,
+      "ground_truth_count": 0,
+      "note": "No ground truth available"
+    }
+  ],
+  "aggregate": {
+    "avg_precision": 0.0,
+    "avg_recall": 0.0,
+    "avg_f1": 0.0
+  }
+}

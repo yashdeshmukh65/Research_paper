@@ -1,0 +1,15 @@
+PyMuPDF==1.24.5
+sentence-transformers==3.0.1
+faiss-cpu==1.16.0
+google-generativeai==0.7.2
+python-dotenv==1.0.1
+numpy==2.5.5
+scipy==1.18.1
+rank-bm25==0.2.2
+pydantic==2.7.1
+scikit-learn==1.5.0
+langgraph==0.2.73
+langchain-core==0.3.29
+langsmith==0.1.147
+streamlit==1.37.0
+matplotlib==3.9.0
