@@ -8,6 +8,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# On Streamlit Cloud, secrets are in st.secrets; locally they come from .env
+if "GEMINI_API_KEY" in st.secrets:
+    os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+
+# Resolve project root so all relative paths work regardless of cwd
+_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Ensure required directories exist (not committed to git)
+for _d in ["data/processed", "data/uploaded_papers", "reports"]:
+    os.makedirs(os.path.join(_ROOT, _d), exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
@@ -64,7 +75,7 @@ def _clear_disk_indexes():
 
 def _clear_uploaded_files():
     """Remove all PDFs from data/uploaded_papers/."""
-    upload_dir = os.path.join("data", "uploaded_papers")
+    upload_dir = os.path.join(_ROOT, "data", "uploaded_papers")
     if os.path.exists(upload_dir):
         for f in os.listdir(upload_dir):
             if f.endswith(".pdf"):
@@ -121,7 +132,7 @@ def _remove_paper(paper_name: str):
         logger.error(f"Error removing '{paper_name}' from indexes: {e}")
 
     # Remove PDF from disk
-    upload_dir = os.path.join("data", "uploaded_papers")
+    upload_dir = os.path.join(_ROOT, "data", "uploaded_papers")
     for f in os.listdir(upload_dir) if os.path.exists(upload_dir) else []:
         if os.path.splitext(f)[0] == paper_name or f == paper_name + ".pdf":
             try:
@@ -254,7 +265,7 @@ def page_upload():
                     tmp_path = tmp.name
 
                 # Save to uploads folder
-                save_path = os.path.join("data", "uploaded_papers", name)
+                save_path = os.path.join(_ROOT, "data", "uploaded_papers", name)
                 os.makedirs(os.path.dirname(save_path), exist_ok=True)
                 with open(save_path, "wb") as f:
                     f.write(file_bytes)
@@ -632,7 +643,7 @@ def page_export():
             use_container_width=True
         )
 
-    reports_dir = "reports"
+    reports_dir = os.path.join(_ROOT, "reports")
     if os.path.exists(reports_dir):
         saved = [f for f in os.listdir(reports_dir) if f.endswith(".md")]
         if saved:

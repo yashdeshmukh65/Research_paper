@@ -3,8 +3,9 @@ import numpy as np
 import pickle
 import os
 
-INDEX_PATH = "data/processed/faiss.index"
-METADATA_PATH = "data/processed/chunks_metadata.pkl"
+_BASE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "processed")
+INDEX_PATH = os.path.join(_BASE, "faiss.index")
+METADATA_PATH = os.path.join(_BASE, "chunks_metadata.pkl")
 
 
 def _get_dimension(chunks: list) -> int:

@@ -2,7 +2,8 @@ import pickle
 import os
 from rank_bm25 import BM25Okapi
 
-BM25_PATH = "data/processed/bm25.pkl"
+_BASE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "processed")
+BM25_PATH = os.path.join(_BASE, "bm25.pkl")
 
 
 def _tokenize(text: str) -> list:

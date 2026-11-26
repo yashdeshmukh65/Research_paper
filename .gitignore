@@ -2,6 +2,13 @@
 .venv/
 __pycache__/
 *.pyc
-data/uploaded_papers/
-data/processed/
-reports/
+*.pyo
+.streamlit/secrets.toml
+data/uploaded_papers/*
+!data/uploaded_papers/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+reports/*
+!reports/.gitkeep
+evaluation/results/
+evaluation/graphs/
